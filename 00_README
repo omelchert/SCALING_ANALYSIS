@@ -1,0 +1,38 @@
+This archive contains autoScale.py, a python tool for performing an automated 
+finite-size scaling analysis as introduced in the appedix of the article
+
+  Houdayer, J. and Hartmann, A. K.
+  "Low-temperature behavior of two-dimensional Gaussian Ising spin glasses",
+  Phys. Rev. B 70, 014418 (2004).
+ 
+The archive further includes an exemplary scaling analysis for the 
+problem of 2d site percolation. 
+
+The archive SCALING_ANALYSIS.tar.gz should contain the following files:
+
+./SCALING_ANALYSIS/00_README		-- this readme file
+./SCALING_ANALYSIS/autoScale.py		-- finite-size scaling program
+./SCALING_ANALYSIS/autoScale_guide.pdf	-- users guide
+./SCALING_ANALYSIS/inputFiles.dat	-- example input file
+./SCALING_ANALYSIS/scalingScript.sh	-- example scaling script
+./SCALING_ANALYSIS/scalingPlot.sh	-- example scaling plot script
+./SCALING_ANALYSIS/scaled_L512_256_128.out -- example output file
+./SCALING_ANALYSIS/error.out		-- example output file
+./SCALING_ANALYSIS/ORDER_PARAMETER	-- folder containing example data
+
+
+System requirements:
+====================
+In order to use autoScale.py, the following requirements have to be fulfilled:
+
+Type 'tar -xzvf SCALING_ANALYSIS.tar.gz' to unpack the archive.
+For further information about program options and file-formats look
+up autoScale.py or see the users guide autoScale_guide.pdf
+
+autoScale.py has been under development since 2007. It was implemented 
+under Python 2.3.4 (and later versions) and it imports only basic Python
+modules that come with any python installation. 
+Accordingly, check that you have installed Python 2.3 or a later version 
+on your system. You can check your current Python version by typing
+'python -V'. If necessary, see http://www.python.org/ or ask your system 
+administrator.
